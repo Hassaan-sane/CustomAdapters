@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="NAAAMME"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="PHONE"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/name" />
+
+
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Call"
+        android:paddingRight="10dp"
+        android:layout_toEndOf="@+id/number"
+        android:layout_alignBottom="@+id/number"
+        android:layout_alignParentTop="true" />
+
+
+
+
+</RelativeLayout>
